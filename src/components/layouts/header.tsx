@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 
-import NavBar from '@/components/nav-bar';
-import Socials from '@/components/socials';
+import NavBar from '@/components/partials/nav-bar';
+import Socials from '@/components/partials/socials';
 
 export default function Header() {
     return (
