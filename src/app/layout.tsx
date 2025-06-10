@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+
+import Header from '@/components/layouts/header';
+
 import './globals.css';
 
 const geistSans = Geist({
@@ -13,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: 'ZVDCM',
+    title: 'ZVM',
     description: 'A Full Stack Developer',
 };
 
@@ -21,6 +24,7 @@ export default function RootLayout({ children }: Readonly<React.PropsWithChildre
     return (
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+                <Header />
                 <main>{children}</main>
             </body>
         </html>
