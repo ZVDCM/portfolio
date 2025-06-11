@@ -6,7 +6,11 @@ import React from 'react';
 
 import { TypographySmall } from '@/components/ui/typography';
 import { cn } from '@/lib/utils/cn';
-import { ILink } from '@/types/link';
+
+interface ILink {
+    href: string;
+    label: string;
+}
 
 const LINKS = [
     {
