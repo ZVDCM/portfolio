@@ -19,7 +19,7 @@ const LINKS = [
 
 export default function Socials() {
     return (
-        <div className="fixed right-5 bottom-5">
+        <div className="flex items-center justify-between gap-2">
             {LINKS.map((link, index) => {
                 const Icon = link.icon;
 
