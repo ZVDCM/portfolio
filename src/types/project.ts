@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
 
-type TProjectCategory =
+export type TProjectCategory =
     | 'Architecture and Design'
     | 'Front end'
     | 'Back end'
@@ -8,7 +8,7 @@ type TProjectCategory =
     | 'DevOps'
     | 'AI';
 
-type TProjectType = 'GitHub' | 'App' | 'Image';
+export type TProjectType = 'GitHub' | 'Web' | 'Image';
 
 export interface IProject {
     href: string;
@@ -16,6 +16,5 @@ export interface IProject {
     type: TProjectType;
     category: TProjectCategory;
     title: string;
-    description: string;
     dateCreated: Date;
 }
