@@ -5,11 +5,7 @@ import { usePathname } from 'next/navigation';
 import React from 'react';
 
 import { cn } from '@/lib/utils/cn';
-
-interface ILink {
-    href: string;
-    label: string;
-}
+import { ILink } from '@/types/link';
 
 const LINKS = [
     {
