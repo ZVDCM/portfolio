@@ -82,7 +82,14 @@
     * {
         @apply border-border outline-ring/50;
     }
+
     body {
         @apply bg-background text-foreground;
+    }
+
+    html,
+    body,
+    main {
+        @apply min-h-screen overflow-x-clip;
     }
 }
