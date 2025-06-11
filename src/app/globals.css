@@ -90,6 +90,6 @@
     html,
     body,
     main {
-        @apply min-h-screen overflow-x-clip;
+        @apply h-screen min-h-screen overflow-x-clip;
     }
 }
