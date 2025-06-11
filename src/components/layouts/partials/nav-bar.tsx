@@ -27,14 +27,15 @@ export default function NavBar() {
             <ul className="flex gap-8">
                 {LINKS.map((link, index) => (
                     <li key={index}>
-                        <Link
-                            href={link.href}
-                            className={cn(
-                                'font-extralight text-white/50 transition-colors hover:text-white',
-                                path === link.href ? 'font-normal text-white' : '',
-                            )}
-                        >
-                            <TypographySmall>{link.label}</TypographySmall>
+                        <Link href={link.href}>
+                            <TypographySmall
+                                className={cn(
+                                    'font-extralight text-white/50 transition-colors hover:text-white',
+                                    path === link.href ? 'font-normal text-white' : '',
+                                )}
+                            >
+                                {link.label}
+                            </TypographySmall>
                         </Link>
                     </li>
                 ))}
