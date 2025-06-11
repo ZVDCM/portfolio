@@ -4,17 +4,18 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
+import { TypographySmall } from '@/components/ui/typography';
 import { cn } from '@/lib/utils/cn';
 import { ILink } from '@/types/link';
 
 const LINKS = [
     {
         href: '/',
-        label: 'Projects',
+        label: 'PROJECTS',
     },
     {
         href: '/about-me',
-        label: 'About Me',
+        label: 'ABOUT ME',
     },
 ] as const satisfies ILink[];
 
@@ -29,11 +30,11 @@ export default function NavBar() {
                         <Link
                             href={link.href}
                             className={cn(
-                                'font-extralight text-white/75 transition-colors hover:text-white',
+                                'font-extralight text-white/50 transition-colors hover:text-white',
                                 path === link.href ? 'font-normal text-white' : '',
                             )}
                         >
-                            {link.label}
+                            <TypographySmall>{link.label}</TypographySmall>
                         </Link>
                     </li>
                 ))}
