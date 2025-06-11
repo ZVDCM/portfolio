@@ -10,11 +10,11 @@ import { ILink } from '@/types/link';
 const LINKS = [
     {
         href: '/',
-        label: 'projects',
+        label: 'Projects',
     },
     {
         href: '/about-me',
-        label: 'about-me',
+        label: 'About Me',
     },
 ] as const satisfies ILink[];
 
