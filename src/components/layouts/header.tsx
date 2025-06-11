@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
 
@@ -7,7 +9,12 @@ import Socials from '@/components/partials/socials';
 export default function Header() {
     return (
         <header className="container mx-auto grid grid-cols-6 items-center px-8 py-4">
-            <Link href="/">ZVM</Link>
+            <Link
+                href="/"
+                className="font-extralight text-white/75 transition-colors hover:text-white"
+            >
+                ZVM
+            </Link>
             <NavBar />
             <Socials />
         </header>
