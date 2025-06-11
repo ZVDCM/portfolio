@@ -89,10 +89,6 @@
 
     html,
     body {
-        @apply h-screen min-h-screen overflow-x-clip;
-    }
-
-    main {
-        height: calc(100vh - 100px);
+        @apply min-h-screen overflow-x-clip;
     }
 }

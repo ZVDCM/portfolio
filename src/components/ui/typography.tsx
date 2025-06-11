@@ -28,7 +28,7 @@ export function TypographyH2({
     return (
         <h2
             className={cn(
-                'scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0',
+                'scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0',
                 className,
             )}
             {...rest}
@@ -59,5 +59,23 @@ export function TypographySmall({
         <small className={cn('text-sm leading-none font-medium', className)} {...rest}>
             {children}
         </small>
+    );
+}
+
+export function TypographyInlineCode({
+    className,
+    children,
+    ...rest
+}: Readonly<React.PropsWithChildren & React.ComponentProps<'code'>>) {
+    return (
+        <code
+            className={cn(
+                'bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold',
+                className,
+            )}
+            {...rest}
+        >
+            {children}
+        </code>
     );
 }

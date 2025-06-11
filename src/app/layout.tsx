@@ -25,7 +25,7 @@ export default function RootLayout({ children }: Readonly<React.PropsWithChildre
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <Header />
-                <main className="container mx-auto px-8">{children}</main>
+                <main>{children}</main>
             </body>
         </html>
     );
