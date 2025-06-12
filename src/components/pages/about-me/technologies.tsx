@@ -125,7 +125,7 @@ const LINKS = [
 
 export default function Technologies() {
     return (
-        <section className="bg-white/3 py-8">
+        <section className="bg-white/1 py-8">
             <div className="container mx-auto flex items-center justify-center px-8">
                 <div className="flex w-[800px] flex-wrap justify-between gap-4">
                     {LINKS.map((link, index) => {
