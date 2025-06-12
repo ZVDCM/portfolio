@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils/cn';
 
 export default function Logo({ className, ...rest }: React.ComponentProps<'small'>) {
     return (
-        <Link href="/" className="w-fit text-white/50 transition-colors hover:text-white">
+        <Link passHref href="/" className="w-fit text-white/50 transition-colors hover:text-white">
             <TypographySmall className={cn('font-extralight', className)} {...rest}>
                 ZVM
             </TypographySmall>
