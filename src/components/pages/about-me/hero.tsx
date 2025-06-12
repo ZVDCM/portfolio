@@ -12,6 +12,7 @@ export default function Hero() {
                     src={Me}
                     alt="A cool picture of myself"
                     className="square-text-wrap float-left aspect-square w-[300px] object-cover"
+                    placeholder="blur"
                 />
                 <TypographyH1 className="text-6xl">I&apos;m Zehrei Verj Morales</TypographyH1>
                 <TypographyP>
