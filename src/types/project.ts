@@ -2,8 +2,8 @@ import { StaticImageData } from 'next/image';
 
 export type TProjectCategory =
     | 'Architecture and Design'
-    | 'Front end'
-    | 'Back end'
+    | 'Frontend'
+    | 'Backend'
     | 'Full Stack'
     | 'DevOps'
     | 'AI';
