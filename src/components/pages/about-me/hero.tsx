@@ -28,9 +28,9 @@ export default function Hero() {
                     <strong>
                         <u>full stack developer</u>
                     </strong>{' '}
-                    with a strong foundation in frontend, backend, and cloud development. I
-                    specialize in building applications across a range of technologies—from frontend
-                    frameworks like{' '}
+                    with a strong foundation in frontend, backend, and cloud development, as well as
+                    DevOps and infrastructure management. I specialize in building applications
+                    across a range of technologies—from frontend frameworks like{' '}
                     <strong>
                         <u>React, Vue, and Angular</u>
                     </strong>{' '}
@@ -56,14 +56,11 @@ export default function Hero() {
                     <strong>
                         <u>Google Cloud Platform (GCP) and Amazon Web Services (AWS)</u>
                     </strong>
-                    . I&apos;m also familiar with hosting environments like{' '}
+                    , as well as hosting environments such as{' '}
                     <strong>
                         <u>DigitalOcean, Vercel, and Netlify</u>
                     </strong>
-                    .
-                </TypographyP>
-                <TypographyP>
-                    On the DevOps side, I work with tools such as{' '}
+                    . On the DevOps side, I work with tools such as{' '}
                     <strong>
                         <u>Docker and Kubernetes</u>
                     </strong>{' '}
