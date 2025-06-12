@@ -15,7 +15,7 @@ export default function Hero() {
                     placeholder="blur"
                 />
                 <TypographyH1 className="text-6xl">I&apos;m Zehrei Verj Morales</TypographyH1>
-                <TypographyP>
+                <TypographyP className="text-justify">
                     I graduated from Angeles University Foundation with a{' '}
                     <strong>
                         <u>Bachelor&apos;s degree in Information Technology</u>
@@ -23,7 +23,7 @@ export default function Hero() {
                     . My hobbies include reading comics, coding, singing, and staying updated with
                     the latest technologies.
                 </TypographyP>
-                <TypographyP>
+                <TypographyP className="text-justify">
                     I&apos;m a{' '}
                     <strong>
                         <u>full stack developer</u>
@@ -32,55 +32,87 @@ export default function Hero() {
                     DevOps and infrastructure management. I specialize in building applications
                     across a range of technologies—from frontend frameworks like{' '}
                     <strong>
-                        <u>React, Vue, and Angular</u>
-                    </strong>{' '}
-                    to backend tools such as{' '}
-                    <strong>
-                        <u>Node.js, Laravel, and .NET</u>
+                        <u>React</u>
                     </strong>
-                    . I&apos;m also experienced in software architectures such as{' '}
+                    ,{' '}
                     <strong>
-                        <u>Clean Architecture and Microservices</u>
+                        <u>Vue</u>
                     </strong>
-                    , codebase strategies like{' '}
+                    ,{' '}
+                    <strong>
+                        <u>Angular</u>
+                    </strong>
+                    , and to backend tools such as{' '}
+                    <strong>
+                        <u>Node.js</u>
+                    </strong>
+                    ,{' '}
+                    <strong>
+                        <u>Laravel</u>
+                    </strong>
+                    , and{' '}
+                    <strong>
+                        <u>.NET</u>
+                    </strong>
+                    . My experience spans software architectures (
+                    <strong>
+                        <u>Clean Architecture</u>
+                    </strong>
+                    ,{' '}
+                    <strong>
+                        <u>Event-Driven Architecture</u>
+                    </strong>
+                    ,{' '}
+                    <strong>
+                        <u>Microservices</u>
+                    </strong>
+                    ), codebase strategies (
                     <strong>
                         <u>Monorepos</u>
                     </strong>
-                    , and design paradigms such as Test-Driven Development{' '}
+                    ), development practices (
                     <strong>
-                        <u>(TDD)</u>
+                        <u>TDD</u>
                     </strong>
-                    , Behavior-Driven Development{' '}
+                    ,{' '}
                     <strong>
-                        <u>(BDD)</u>
+                        <u>BDD</u>
                     </strong>
-                    , Event-Driven Development{' '}
+                    ), and design paradigms like Domain-Driven Design (
                     <strong>
-                        <u>(EDD)</u>
+                        <u>DDD</u>
                     </strong>
-                    , and Domain-Driven Design{' '}
-                    <strong>
-                        <u>(DDD)</u>
-                    </strong>
-                    .
+                    ).
                 </TypographyP>
-                <TypographyP>
+                <TypographyP className="text-justify">
                     In cloud computing, I&apos;ve deployed and managed applications using platforms
-                    like Google Cloud Platform{' '}
+                    like Google Cloud Platform (
                     <strong>
-                        <u>(GCP)</u>
-                    </strong>{' '}
-                    and Amazon Web Services{' '}
-                    <strong>
-                        <u>(AWS)</u>
+                        <u>GCP</u>
                     </strong>
-                    , as well as hosting environments such as{' '}
+                    ) and Amazon Web Services (
                     <strong>
-                        <u>DigitalOcean, Vercel, and Netlify</u>
+                        <u>AWS</u>
+                    </strong>
+                    ), as well as hosting environments such as{' '}
+                    <strong>
+                        <u>DigitalOcean</u>
+                    </strong>
+                    ,{' '}
+                    <strong>
+                        <u>Vercel</u>
+                    </strong>
+                    , and{' '}
+                    <strong>
+                        <u>Netlify</u>
                     </strong>
                     . On the DevOps side, I work with tools such as{' '}
                     <strong>
-                        <u>Docker and Kubernetes</u>
+                        <u>Docker</u>
+                    </strong>{' '}
+                    and{' '}
+                    <strong>
+                        <u>Kubernetes</u>
                     </strong>{' '}
                     for containerization and orchestration,{' '}
                     <strong>
