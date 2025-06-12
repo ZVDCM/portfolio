@@ -6,11 +6,7 @@ import React from 'react';
 
 import { TypographySmall } from '@/components/ui/typography';
 import { cn } from '@/lib/utils/cn';
-
-interface ILink {
-    href: string;
-    label: string;
-}
+import { ILinkWithLabel } from '@/types/link';
 
 const LINKS = [
     {
@@ -21,7 +17,7 @@ const LINKS = [
         href: '/projects',
         label: 'PROJECTS',
     },
-] as const satisfies ILink[];
+] as const satisfies ILinkWithLabel[];
 
 export default function NavBar() {
     const path = usePathname();

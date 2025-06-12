@@ -2,20 +2,15 @@
 
 import Link from 'next/link';
 import React from 'react';
-import { IconType } from 'react-icons';
 import { FaLinkedin, FaSquareGithub } from 'react-icons/fa6';
 
 import { Button } from '@/components/ui/button';
-
-interface ILink {
-    href: string;
-    icon: IconType;
-}
+import { ILinkWithIcon } from '@/types/link';
 
 const LINKS = [
     { href: 'https://www.linkedin.com/in/zehrei-verj-morales', icon: FaLinkedin },
     { href: 'https://github.com/ZVDCM', icon: FaSquareGithub },
-] as const satisfies ILink[];
+] as const satisfies ILinkWithIcon[];
 
 export default function Socials() {
     return (
