@@ -38,23 +38,41 @@ export default function Hero() {
                     <strong>
                         <u>Node.js, Laravel, and .NET</u>
                     </strong>
-                    . I&apos;m also experienced in software architectures like{' '}
+                    . I&apos;m also experienced in software architectures such as{' '}
                     <strong>
-                        <u>Clean Architecture, Microservices, and Monoliths</u>
-                    </strong>{' '}
-                    , and design paradigms such as{' '}
+                        <u>Clean Architecture and Microservices</u>
+                    </strong>
+                    , codebase strategies like{' '}
                     <strong>
-                        <u>
-                            Domain-Driven Design, Test-Driven Development, and Event-Driven Design
-                        </u>
-                    </strong>{' '}
+                        <u>Monorepos</u>
+                    </strong>
+                    , and design paradigms such as Test-Driven Development{' '}
+                    <strong>
+                        <u>(TDD)</u>
+                    </strong>
+                    , Behavior-Driven Development{' '}
+                    <strong>
+                        <u>(BDD)</u>
+                    </strong>
+                    , Event-Driven Development{' '}
+                    <strong>
+                        <u>(EDD)</u>
+                    </strong>
+                    , and Domain-Driven Design{' '}
+                    <strong>
+                        <u>(DDD)</u>
+                    </strong>
                     .
                 </TypographyP>
                 <TypographyP>
                     In cloud computing, I&apos;ve deployed and managed applications using platforms
-                    like{' '}
+                    like Google Cloud Platform{' '}
                     <strong>
-                        <u>Google Cloud Platform (GCP) and Amazon Web Services (AWS)</u>
+                        <u>(GCP)</u>
+                    </strong>{' '}
+                    and Amazon Web Services{' '}
+                    <strong>
+                        <u>(AWS)</u>
                     </strong>
                     , as well as hosting environments such as{' '}
                     <strong>
