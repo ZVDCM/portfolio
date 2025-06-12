@@ -28,6 +28,7 @@ export default function NavBar() {
                 {LINKS.map((link, index) => (
                     <li key={index}>
                         <Link
+                            passHref
                             href={link.href}
                             className="text-white/50 transition-colors hover:text-white"
                         >

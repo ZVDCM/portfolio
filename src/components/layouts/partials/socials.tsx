@@ -19,7 +19,7 @@ export default function Socials() {
                 const Icon = link.icon;
 
                 return (
-                    <Link href={link.href} key={index}>
+                    <Link passHref href={link.href} key={index}>
                         <Button variant="ghost" size="icon" className="cursor-pointer">
                             <Icon />
                         </Button>
