@@ -125,13 +125,19 @@ const LINKS = [
 
 export default function Technologies() {
     return (
-        <section className="bg-white/5 py-8">
+        <section className="bg-white/3 py-8">
             <div className="container mx-auto flex items-center justify-center px-8">
                 <div className="flex w-[800px] flex-wrap justify-between gap-4">
                     {LINKS.map((link, index) => {
                         const Icon = link.icon;
                         return (
-                            <Link passHref key={index} href={link.href} className="last:mr-auto">
+                            <Link
+                                passHref
+                                key={index}
+                                href={link.href}
+                                className="last:mr-auto"
+                                target="_"
+                            >
                                 <Button variant="ghost" className="aspect-square h-[none] p-0">
                                     <Icon className="size-[28px]" />
                                 </Button>
