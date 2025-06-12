@@ -92,3 +92,13 @@
         @apply min-h-screen overflow-x-clip;
     }
 }
+
+@layer utilities {
+    .square-text-wrap {
+        shape-outside: inset(0);
+        clip-path: inset(0);
+        -webkit-shape-outside: inset(0);
+        -webkit-clip-path: inset(0);
+        margin-right: 1rem;
+    }
+}
