@@ -23,7 +23,7 @@ export default function NavBar() {
     const path = usePathname();
 
     return (
-        <nav className="col-span-4 place-self-center">
+        <nav className="pointer-events-auto col-span-4 place-self-center">
             <ul className="flex gap-8">
                 {LINKS.map((link, index) => (
                     <li key={index}>
