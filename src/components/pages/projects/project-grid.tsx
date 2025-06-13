@@ -2,10 +2,20 @@
 
 import React from 'react';
 
+import Me from '@/assets/images/me.jpg';
 import Project from '@/components/pages/projects/project';
 import { IProject } from '@/types/project';
 
-const PROJECTS = [] as const satisfies IProject[];
+const PROJECTS = [
+    {
+        category: 'AI',
+        dateCreated: new Date(),
+        href: '#',
+        image: Me,
+        title: 'Barbara Blair',
+        type: 'GitHub',
+    },
+] as const satisfies IProject[];
 
 export default function ProjectGrid() {
     return (
