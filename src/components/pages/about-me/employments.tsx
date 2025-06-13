@@ -10,12 +10,21 @@ import {
     TypographyMuted,
     TypographyP,
 } from '@/components/ui/typography';
+import useMediaQuery from '@/hooks/use-mediaquery';
+import { cn } from '@/lib/utils/cn';
 
 export default function Employments() {
+    const isDesktop = useMediaQuery('(min-width:768px)');
+
     return (
-        <section className="container mx-auto flex items-center justify-center px-8">
-            <article className="mt-10 w-[800px]">
-                <figure className="square-text-wrap float-left aspect-square w-[300px]">
+        <section className="container mx-auto flex items-center justify-center px-4 md:px-8">
+            <article className="mt-10 flex w-[800px] flex-col md:block">
+                <figure
+                    className={cn(
+                        isDesktop ? 'square-text-wrap float-left' : '',
+                        'mb-15 aspect-square w-full md:mb-0 md:w-[300px]',
+                    )}
+                >
                     <Image
                         src={Eoty}
                         alt="A picture of me being awarded as Employee of the Year"
@@ -29,7 +38,7 @@ export default function Employments() {
                     </figcaption>
                 </figure>
                 <TypographyMuted>2024-2025</TypographyMuted>
-                <TypographyH1 className="text-6xl">FullStack HQ</TypographyH1>
+                <TypographyH1>FullStack HQ</TypographyH1>
                 <TypographyH2>Full Stack Developer</TypographyH2>
                 <TypographyP className="text-justify">
                     I joined FullStack HQ on February 14, 2024. It is my first company. Through this

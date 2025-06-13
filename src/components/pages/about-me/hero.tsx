@@ -3,20 +3,27 @@
 import Image from 'next/image';
 import React from 'react';
 
-import Me from '@/assets/images/me.jpg';
+import Me from '@/assets/images/me.png';
 import { TypographyH1, TypographyP } from '@/components/ui/typography';
+import useMediaQuery from '@/hooks/use-mediaquery';
+import { cn } from '@/lib/utils/cn';
 
 export default function Hero() {
+    const isDesktop = useMediaQuery('(min-width:768px)');
+
     return (
-        <section className="container mx-auto flex items-center justify-center px-8">
-            <article className="mt-10 w-[800px]">
+        <section className="container mx-auto flex items-center justify-center px-4 md:px-8">
+            <article className="mt-10 flex w-[800px] flex-col md:block">
                 <Image
                     src={Me}
                     alt="A cool picture of myself"
-                    className="square-text-wrap float-left aspect-square w-[300px] object-cover"
+                    className={cn(
+                        isDesktop ? 'square-text-wrap float-left' : '',
+                        'mb-15 aspect-square w-full object-cover md:mb-0 md:w-[300px]',
+                    )}
                     placeholder="blur"
                 />
-                <TypographyH1 className="text-6xl">I&apos;m Zehrei Verj Morales</TypographyH1>
+                <TypographyH1>I&apos;m Zehrei Verj Morales</TypographyH1>
                 <TypographyP className="text-justify">
                     I graduated from Angeles University Foundation with a{' '}
                     <strong>

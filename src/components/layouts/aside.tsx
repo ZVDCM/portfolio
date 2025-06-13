@@ -8,7 +8,7 @@ import Socials from '@/components/layouts/partials/socials';
 export default function Aside() {
     return (
         <aside className="fixed bottom-8 w-full">
-            <div className="container mx-auto flex items-center justify-between px-8">
+            <div className="container mx-auto flex items-center justify-between px-4 md:px-8">
                 <DownloadResume />
                 <Socials />
             </div>
