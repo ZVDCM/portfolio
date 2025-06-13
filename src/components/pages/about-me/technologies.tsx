@@ -127,21 +127,17 @@ export default function Technologies() {
     return (
         <section className="bg-white/1 py-8">
             <div className="container mx-auto flex items-center justify-center px-8">
-                <div className="flex w-[800px] flex-wrap justify-between gap-4">
+                <div className="grid w-[800px] grid-cols-[repeat(auto-fit,minmax(52px,1fr)minmax(52px,1fr))] gap-4">
                     {LINKS.map((link, index) => {
                         const Icon = link.icon;
                         return (
-                            <Link
-                                passHref
-                                key={index}
-                                href={link.href}
-                                className="last:mr-auto"
-                                target="_"
-                            >
-                                <Button variant="ghost" className="aspect-square h-[none] p-0">
-                                    <Icon className="size-[28px]" />
-                                </Button>
-                            </Link>
+                            <div key={index} className="grid place-items-center">
+                                <Link passHref href={link.href} target="_">
+                                    <Button variant="ghost" className="aspect-square h-[none] p-0">
+                                        <Icon className="size-[28px]" />
+                                    </Button>
+                                </Link>
+                            </div>
                         );
                     })}
                 </div>
