@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     description: 'A Full Stack Developer',
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function RootLayout({ children }: Readonly<React.PropsWithChildren>) {
     return (
         <html lang="en">
