@@ -79,3 +79,15 @@ export function TypographyInlineCode({
         </code>
     );
 }
+
+export function TypographyMuted({
+    className,
+    children,
+    ...rest
+}: Readonly<React.PropsWithChildren & React.ComponentProps<'p'>>) {
+    return (
+        <p className={cn('text-muted-foreground text-sm', className)} {...rest}>
+            {children}
+        </p>
+    );
+}
