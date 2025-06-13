@@ -10,7 +10,7 @@ export function middleware(request: NextRequest) {
         connect-src 'self';
         script-src 'self' 'nonce-${nonce}' 'strict-dynamic' ${IS_DEV ? "'unsafe-eval'" : ''};
         style-src 'self' 'unsafe-inline';
-        img-src 'self' blob: data: some.domain.com;
+        img-src 'self' blob: data:;
         font-src 'self';
         object-src 'none';
         base-uri 'self';
