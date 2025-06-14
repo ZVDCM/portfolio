@@ -18,8 +18,8 @@ export default function Hero() {
                     src={Me}
                     alt="A cool picture of myself"
                     className={cn(
-                        isDesktop ? 'square-text-wrap float-left' : '',
-                        'mb-15 aspect-square w-full object-cover md:mb-0 md:w-[300px]',
+                        isDesktop ? 'square-text-wrap' : '',
+                        'float-left mb-15 aspect-square w-full object-cover md:mr-4 md:mb-0 md:w-[300px]',
                     )}
                     placeholder="blur"
                 />

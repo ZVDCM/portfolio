@@ -21,8 +21,8 @@ export default function Employments() {
             <article className="mt-10 flex w-[800px] flex-col md:block">
                 <figure
                     className={cn(
-                        isDesktop ? 'square-text-wrap float-left' : '',
-                        'mb-15 aspect-square w-full md:mb-0 md:w-[300px]',
+                        isDesktop ? 'square-text-wrap' : '',
+                        'float-left mb-15 aspect-square w-full md:mr-4 md:mb-0 md:w-[300px]',
                     )}
                 >
                     <Image
