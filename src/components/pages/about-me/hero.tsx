@@ -5,22 +5,15 @@ import React from 'react';
 
 import Me from '@/assets/images/me.png';
 import { TypographyH1, TypographyP } from '@/components/ui/typography';
-import useMediaQuery from '@/hooks/use-mediaquery';
-import { cn } from '@/lib/utils/cn';
 
 export default function Hero() {
-    const isDesktop = useMediaQuery('(min-width:768px)');
-
     return (
         <section className="container mx-auto flex items-center justify-center px-4 md:px-8">
             <article className="mt-10 flex w-[800px] flex-col md:block">
                 <Image
                     src={Me}
                     alt="A cool picture of myself"
-                    className={cn(
-                        isDesktop ? 'square-text-wrap' : '',
-                        'float-left mb-15 aspect-square w-full object-cover md:mr-4 md:mb-0 md:w-[300px]',
-                    )}
+                    className="float-left mb-15 aspect-square w-full object-cover md:mr-4 md:mb-0 md:w-[300px]"
                     placeholder="blur"
                 />
                 <TypographyH1>I&apos;m Zehrei Verj Morales</TypographyH1>

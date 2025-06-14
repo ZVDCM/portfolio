@@ -10,21 +10,12 @@ import {
     TypographyMuted,
     TypographyP,
 } from '@/components/ui/typography';
-import useMediaQuery from '@/hooks/use-mediaquery';
-import { cn } from '@/lib/utils/cn';
 
 export default function Employments() {
-    const isDesktop = useMediaQuery('(min-width:768px)');
-
     return (
         <section className="container mx-auto flex items-center justify-center px-4 md:px-8">
             <article className="mt-10 flex w-[800px] flex-col md:block">
-                <figure
-                    className={cn(
-                        isDesktop ? 'square-text-wrap' : '',
-                        'float-left mb-15 aspect-square w-full md:mr-4 md:mb-0 md:w-[300px]',
-                    )}
-                >
+                <figure className="float-left mb-15 aspect-square w-full md:mr-4 md:mb-0 md:w-[300px]">
                     <Image
                         src={Eoty}
                         alt="A picture of me being awarded as Employee of the Year"
