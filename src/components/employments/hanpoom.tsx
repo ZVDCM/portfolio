@@ -11,7 +11,7 @@ import {
 
 function Hanpoom() {
     return (
-        <article className="mt-10 flex w-[800px] flex-col">
+        <article className="mt-10 flex w-full max-w-[800px] flex-col">
             <TypographyMuted>Jul 2025 - Sept 2025</TypographyMuted>
             <TypographyH1>Hanpoom</TypographyH1>
             <TypographyH2>Full Stack Developer</TypographyH2>

@@ -11,7 +11,7 @@ import {
 
 function Mrkd() {
     return (
-        <article className="mt-10 flex w-[800px] flex-col">
+        <article className="mt-10 flex w-full max-w-[800px] flex-col">
             <TypographyMuted>Sept 2025 - Present</TypographyMuted>
             <TypographyH1>MRKD.Inc</TypographyH1>
             <TypographyH2>Full Stack Developer</TypographyH2>

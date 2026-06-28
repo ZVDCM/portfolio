@@ -126,8 +126,8 @@ const LINKS = [
 export default function Technologies() {
     return (
         <section className="bg-white/1 py-8">
-            <div className="container mx-auto flex items-center justify-center px-8">
-                <div className="grid w-[800px] grid-cols-[repeat(auto-fit,minmax(52px,1fr)minmax(52px,1fr))] gap-4">
+            <div className="container mx-auto flex items-center justify-center px-4 md:px-8">
+                <div className="grid w-full max-w-[800px] grid-cols-[repeat(auto-fit,minmax(52px,1fr))] gap-4">
                     {LINKS.map((link, index) => {
                         const Icon = link.icon;
                         return (

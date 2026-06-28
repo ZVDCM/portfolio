@@ -9,7 +9,7 @@ import { TypographyH1, TypographyP } from '@/components/ui/typography';
 export default function Hero() {
     return (
         <section className="container mx-auto flex items-center justify-center px-4 md:px-8">
-            <article className="mt-10 flex w-[800px] flex-col md:block">
+            <article className="mt-10 flex w-full max-w-[800px] flex-col md:block">
                 <Image
                     src={Me}
                     alt="A cool picture of myself"

@@ -13,7 +13,7 @@ import {
 
 function FullstackHQ() {
     return (
-        <article className="mt-10 flex w-[800px] flex-col md:block">
+        <article className="mt-10 flex w-full max-w-[800px] flex-col md:block">
             <figure className="float-left mb-15 aspect-square w-full md:mr-4 md:mb-0 md:w-[300px]">
                 <Image
                     src={Eoty}
