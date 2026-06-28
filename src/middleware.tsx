@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const IS_DEV = process.env.NODE_ENV;
+const IS_DEV = process.env.NODE_ENV === 'development';
 
 export function middleware(request: NextRequest) {
     const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
@@ -33,6 +33,9 @@ export function middleware(request: NextRequest) {
         },
     });
     response.headers.set('Content-Security-Policy', contentSecurityPolicyHeaderValue);
+    response.headers.set('X-Content-Type-Options', 'nosniff');
+    response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+    response.headers.set('X-Frame-Options', 'DENY');
 
     return response;
 }
